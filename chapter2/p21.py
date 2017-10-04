@@ -7,11 +7,11 @@ def wrap():
     f = open(fname, 'r')
     r = f.readlines()
     for l in r:
-        if len(l) > width:
-            print l
-      #      x = list(l)
-       #     x1 =x[:width]  
-        #    print ''.join(x1)
-            #print ''.join(x2)
+        if len(l) > int(width):
+            x = list(l)
+            x1 = x[ : int(width)]  
+            x2 = x[int(width) :]
+            print ''.join(x1)
+            print ''.join(x2)
     f.close()
 wrap()
