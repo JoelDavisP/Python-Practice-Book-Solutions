@@ -10,7 +10,7 @@ def num_py():
             for i in fnames:
                 if i.split('.')[1] == 'py':
                     count += 1
-                    yield i, count
+                    yield os.path.join(fpath, i), count
                         
 y = num_py()
 while True:
